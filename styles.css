@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif; /* Vurder å bruke Google Fonts */
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -8,7 +8,7 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -25,6 +25,12 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #ffa500; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
 }
 
 main {
@@ -33,9 +39,11 @@ main {
 
 section {
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 20px; /* Increased padding for better readability */
     background: #fff;
     border: 1px solid #ddd;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
 footer {
@@ -46,4 +54,22 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Knappestil */
+button, a.button {
+    background-color: #007BFF; /* Primærfarge */
+    color: #fff; /* Tekstfarge */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Runde hjørner */
+    cursor: pointer;
+    text-decoration: none; /* Ingen understreking */
+    display: inline-block; /* For å kunne bruke margin */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+button:hover, a.button:hover {
+    background-color: #0056b3; /* Mørkere blå */
+    transform: translateY(-2px); /* Liten hevingseffekt ved hover */
 }

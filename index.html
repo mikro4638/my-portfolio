@@ -3,43 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min Portefølje</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link til CSS-fil for styling -->
+    <title>Mie Kronkvist Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: white; /* Endret farge til hvit */
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        .project-description {
+            display: none;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+
+        .project-title {
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        #highsoft {
+            display: none;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+
+        #highsoft h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        #highsoft p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        .no-underline {
+            text-decoration: none;
+        }
+
+        #gima-project {
+            display: none;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+
+        .black-dot {
+            height: 10px;
+            width: 10px;
+            background-color: black;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Min Portefølje</h1>
+        <h1>Mie Kronkvist Portfolio</h1> <!-- Beholdt kun én overskrift -->
         <nav>
             <ul>
-                <li><a href="#tetris">Tetris</a></li>
-                <li><a href="#snake">Snake</a></li>
-                <li><a href="#figma">Figma Prosjekt</a></li>
+                <li><a href="#java-prosjekter">Java Prosjekter</a></li>
+                <li><a href="#hackathon">Hackathon</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="tetris">
-            <h2>Tetris</h2>
-            <p>Dette prosjektet er en implementering av det klassiske Tetris-spillet skrevet i Java.</p>
-            <a href="https://github.com/mikro4638/Mie.Kronkvist_Tetris_Game" target="_blank">Se på GitHub</a>
+        <section id="java-prosjekter">
+            <h2>Java Prosjekter</h2>
+            <ul>
+                <li>
+                    <h3 class="project-title">Tetris 👾♦️</h3>
+                    <div class="project-description">
+                        <p>Dette prosjektet er en implementering av det klassiske Tetris-spillet skrevet i Java.</p>
+                        <a href="https://github.com/mikro4638/Mie.Kronlvist_Tetris_Game.git" target="_blank">Se på GitHub</a>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="project-title">Snake 🐍🍎</h3>
+                    <div class="project-description">
+                        <p>Dette prosjektet er en implementering av det klassiske Snake-spillet skrevet i Java.</p>
+                        <a href="https://github.com/mikro4638/Mie.Kronkvist_Snake_Game.git" target="_blank">Se på GitHub</a>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="project-title">Wordle 🟩🟨⬜️</h3>
+                    <div class="project-description">
+                        <p>Dette prosjektet er en implementering av en AI for Wordle-spillet, skrevet i Java.</p>
+                        <a href="https://github.com/mikro4638/Mie.Kronkvist_Wordle_Game.git" target="_blank">Se på GitHub</a>
+                    </div>
+                </li>
+            </ul>
         </section>
 
-        <section id="snake">
-            <h2>Snake</h2>
-            <p>Dette prosjektet er en implementering av det klassiske Snake-spillet skrevet i Java.</p>
-            <a href="https://github.com/mikro4638/Mie.Kronkvist_Snake_Game" target="_blank">Se på GitHub</a>
-        </section>
-
-        <section id="figma">
-            <h2>Figma Prosjekt</h2>
-            <p>Her kan du se Figma-prosjektet mitt.</p>
-            <a href="https://www.figma.com/file/your-figma-link" target="_blank">Se på Figma</a>
+        <section id="hackathon">
+            <h2>Hackathon</h2>
+            <ul>
+                <li>
+                    <h3 class="project-title">Highsoft x Gi Gaven Videre</h3>
+                    <div class="project-description">
+                        <h3>Om prosjektet: Highsoft x Gi Gaven Videre</h3>
+                        <p>Gi Gaven Videre er et initiativ som tilbyr en ny måte å gi gaver på, der mottakeren kan velge et formål å gi gaven videre til. Dette konseptet er bygget på ideen om bærekraftig forbruk, hvor gaver rettes mot organisasjoner som arbeider for gode formål. For mer informasjon om Gi Gaven Videre, kan du lese mer om initiativet 
+                        <a href="https://www.gigavenvidere.no/om-oss" target="_blank">her</a>.
+                        </p>
+                        <p>
+                        I løpet av hackathonet vårt fokuserte vi på å utvikle en løsning for å fremme bærekraftig forbruk og gjenbruk av gaver. Vårt mål var å skape en plattform som ikke bare informerer om hvordan gaver kan gis videre, men også oppmuntrer både bedrifter og enkeltpersoner til å engasjere seg i meningsfulle bidrag. Vi valgte å lage en interaktiv nettside som fremhever de tre mest populære donasjonskategoriene innen en bedrift. Brukerne kan klikke seg inn på hver kategori for å se hvilke organisasjoner som har mottatt de største donasjonene, samt få innsikt i hvordan deres bidrag påvirker samfunnet.
+                        </p>
+                        <p>
+                        Plattformen gir brukerne en visuell fremstilling av donasjoner gjennom diagrammer og grafer, og oppfordrer dem til å reflektere over sine egne verdier og bærekraftige mål. Ved å skape en personlig tilknytning til donasjonene, håper vi å inspirere flere til å benytte seg av Gi Gaven Videre og fortsette å gi gaver på en meningsfull måte.
+                        </p>
+                        <h3 class="project-title" id="figma-link">Se Figma prosjektet her:</h3>
+                        <div class="project-description" id="gima-project">
+                            <p>Dette prosjektet er vårt bidrag til Highsoft x Gi Gaven Videre Hackathon 2024.</p>
+                            <a href="https://www.figma.com/proto/l6wZZC8z2i85hCVpVCdzXQ/Untitled?node-id=3-1773&starting-point-node-id=1%3A2" target="_blank">Se på Figma</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Mie Kronkvist</p>
     </footer>
+
+    <script>
+        // Klikkfunksjonalitet for Java-prosjekter og Hackathon-delen
+        document.querySelectorAll('.project-title').forEach(function(title) {
+            title.onclick = function() {
+                const description = this.nextElementSibling;
+                const isVisible = description.style.display === 'block';
+                
+                // Skjul alle prosjektbeskrivelser før visning
+                document.querySelectorAll('.project-description').forEach(function(desc) {
+                    desc.style.display = 'none';
+                });
+                
+                // Vis eller skjul den tilhørende prosjektbeskrivelsen
+                description.style.display = isVisible ? 'none' : 'block';
+            };
+        });
+
+        // Spesifikk klikkfunksjonalitet for Figma-prosjektet
+        document.getElementById('figma-link').onclick = function() {
+            const gimaProject = document.getElementById('gima-project');
+            const isVisible = gimaProject.style.display === 'block';
+            
+            // Vis eller skjul prosjektbeskrivelsen for Gima
+            gimaProject.style.display = isVisible ? 'none' : 'block';
+        };
+    </script>
 </body>
 </html>
