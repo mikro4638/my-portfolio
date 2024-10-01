@@ -15,7 +15,7 @@
         }
 
         h1 {
-            color: white; /* Endret farge til hvit */
+            color: white; /* Beholdt hvit farge */
         }
 
         h2, h3 {
@@ -33,6 +33,13 @@
 
         .project-title {
             cursor: pointer;
+            color: #007BFF; /* Blå farge for prosjekt-titler */
+            transition: color 0.3s, text-shadow 0.3s; /* Animasjonseffekt */
+        }
+
+        .project-title:hover {
+            color: #0056b3; /* Mørkere blå ved hover */
+            text-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Lysere skyggeeffekt */
         }
 
         ul {
@@ -83,7 +90,7 @@
 </head>
 <body>
     <header>
-        <h1>Mie Kronkvist Portfolio</h1> <!-- Beholdt kun én overskrift -->
+        <h1>Mie Kronkvist Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="#java-prosjekter">Java Prosjekter</a></li>
